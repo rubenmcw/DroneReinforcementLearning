@@ -32,6 +32,10 @@ Here are the steps to compile and run our code in order to replicate our results
 
 15.) You will see it say "Press any key to takeoff" in the terminal, press any key and then follow the rest of the prompts. You should see the drone flying autonomously in AirSim using the reinforcement learning model that you trained (PPO.zip).
 
+Now the below steps pertain to our second project:
+
+16.)
+
 -----------------------------------------------------------------------------------
 Information about datasets:
 
