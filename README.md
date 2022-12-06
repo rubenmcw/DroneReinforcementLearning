@@ -6,7 +6,7 @@ Here are the steps to compile and run our code in order to replicate our results
 
 2.) Run all of the cells top to bottom
 
-3.) Click on the folder icon on the left side of the screen 
+3.) Once all of the cells have finished running, click on the folder icon on the left side of the screen 
 
 4.) If you don't see a file called "PPO.zip" then click the refresh icon and then it should popup. Download this file.
 
