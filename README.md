@@ -29,3 +29,8 @@ Here are the steps to compile and run our code in order to replicate our results
 13.) Type "python RubenTest.py" and press enter.
 
 14.) You will see it say "Press any key to takeoff" in the terminal, press any key and then follow the rest of the prompts. You should see the drone flying autonomously in AirSim using the reinforcement learning model that you trained (PPO.zip).
+
+-----------------------------------------------------------------------------------
+Information about datasets:
+
+No datasets were used as part of this preliminary project code since we utilized reinforcement learning.
