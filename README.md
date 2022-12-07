@@ -1,5 +1,7 @@
 # DroneReinforcementLearning
 
+IMPORTANT NOTE: automatically generated documentation for the code is located at doc > _build > html > index.html
+
 Software you must install in order for the steps below to work:
 
 1.) You need to do pip install gym
