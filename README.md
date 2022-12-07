@@ -42,7 +42,8 @@ Now the below steps pertain to our second project:
 
 19.) Lot's of numbers will be displayed 
 
-19.) The updated numbers in the matrix shows the reward values in each state. And where the reward value is at 1.0 is our goal. If you can see 1.0 in the below matrix that means, our agent has reached  the final state and our code have learnt how to reach the final goal in a 2d grid without hitting any obstacles or getting into any trouble.
+20.) The updated numbers in the matrix shows the reward values in each state. And where the reward value is at 1.0 is our goal. If you can see 1.0 in the below matrix that means, our agent has reached  the final state and our code have learnt how to reach the final goal in a 2d grid without hitting any obstacles or getting into any trouble.
+
 -----------------------------------------------------------------------------------
 Information about datasets:
 
