@@ -14,7 +14,9 @@ Here are the steps to compile and run our code in order to replicate our results
 
 6.) Open AirSim (follow the instructions here to open AirSim: https://microsoft.github.io/AirSim/build_macos/).
 
-7.) Click the dropdown with the double arrow pointing to the right next to where it says "Compile". Then Click "Play".
+7.) Click the dropdown with the double arrow pointing to the right next to where it says "Compile" (see image below). Then Click "Play".
+
+![Cover Photo](/images/dropdown.png)
 
 8.) When the window pops up asking "Would you like to use car simulation? Choose no to use quadrotor simulation." select No.
 
