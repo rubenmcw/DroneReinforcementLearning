@@ -101,7 +101,7 @@ env=FlightEnv()
 log_path = os.path.join('Training', 'Logs')
 model = PPO("MlpPolicy", env, verbose=1, tensorboard_log=log_path)
 
-#load saved model (see jupyter notebook for how we trained this model)
+#load saved model (see CreatePPOModel.ipynb for how we trained this model)
 model = model.load('PPO')
 # connect to the AirSim simulator
 client = airsim.MultirotorClient()
