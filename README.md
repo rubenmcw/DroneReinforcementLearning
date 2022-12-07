@@ -34,15 +34,7 @@ Here are the steps to compile and run our code in order to replicate our results
 
 Now the below steps pertain to our second project:
 
-16.) Please go the following google colab link [https://colab.research.google.com/drive/1u7PHpb2CAS7DMYpy9sBmvOhdYCzVwZuC?usp=sharing]
-
-17.) Run all of the cells top to bottom
-
-18.) Once all of the cells have finished running. You will see the output being displayed below the last cell.
-
-19.) Lot's of numbers will be displayed 
-
-20.) The updated numbers in the matrix shows the reward values in each state. And where the reward value is at 1.0 is our goal. If you can see 1.0 in the below matrix that means, our agent has reached  the final state and our code have learnt how to reach the final goal in a 2d grid without hitting any obstacles or getting into any trouble.
+16.)
 
 -----------------------------------------------------------------------------------
 Information about datasets:
