@@ -1,5 +1,12 @@
 # DroneReinforcementLearning
 
+Software you must install in order for the steps below to work:
+
+1.) You need to do pip install gym
+
+2.) You need to do pip install stable-baselines3[extra]
+
+
 Here are the steps to compile and run our code in order to replicate our results:
 
 1.) Go to this link: [[https://drive.google.com/file/d/1sa3BACGzJf0FKjR2DPEz-j345Ub-pG0F/view?usp=sharing](https://colab.research.google.com/drive/1-P9xrSE-l14V0mS0qsHiY_ZmHGxPqx01?usp=sharing)](https://colab.research.google.com/drive/1-P9xrSE-l14V0mS0qsHiY_ZmHGxPqx01?usp=sharing)
