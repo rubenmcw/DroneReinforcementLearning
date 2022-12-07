@@ -36,7 +36,15 @@ Here are the steps to compile and run our code in order to replicate our results
 
 Now the below steps pertain to our second project:
 
-16.)
+16.) Go to the following link " https://colab.research.google.com/drive/1u7PHpb2CAS7DMYpy9sBmvOhdYCzVwZuC?usp=sharing "
+
+17.) Run all of the cells top to bottom
+
+18.) Once all of the cells have finished running, below the last cell you will see the output being displayed. 
+
+19.) You will be seeing two matrices, the first one gives you the general matrix like rows and numbers , where the obstacles are located, goal and start position.
+
+20.) The second bottom matrix gives you the reward values updated in all the cells. and you can notice the reward values neat the obstacle are lower comapared to the other cells/states.
 
 -----------------------------------------------------------------------------------
 Information about datasets:
