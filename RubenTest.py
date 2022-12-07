@@ -19,7 +19,15 @@ import time
 
 
 class FlightEnv(Env):
+    """
+    This is the environment that we use for reinforcement learning.
+    The idea is that the drone will learn to stay within a certain altitude range
+    (37 to 39 inclusive) where its reward will be maximized.
+    """
     def __init__(self):
+        """
+        Constructor method
+        """
         # Actions we can take, down, stay, up
         self.action_space = Discrete(3)
         # altitude array
@@ -30,6 +38,16 @@ class FlightEnv(Env):
         self.flight_length = 60
         
     def step(self, action):
+        """
+        One step of reinforcement learning. 
+
+        :param action: the action that the drone should take (either 0, 1, or 2),
+        0 means go down 1 unit, 1 means stay at the same altitude, and 2 means
+        go up 1 unit
+        :type action: int
+        :return: step information
+        :rtype: tuple
+        """
         # Apply action
         # 0 -1 = -1 altitude
         # 1 -1 = 0 
@@ -59,10 +77,19 @@ class FlightEnv(Env):
         return self.state, reward, done, info
 
     def render(self):
+        """
+        Renders the environment (we don't use this since we use AirSim as the display)
+        """
         # Implement viz
         pass
     
     def reset(self):
+        """
+        Resets the environment.
+
+        :return: initial state (altitude)
+        :rtype: numpy array of floats
+        """
         # Reset altitude
         self.state = np.array([38 + random.randint(-3,3)]).astype(float)
         # Reset flight time
