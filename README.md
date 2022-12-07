@@ -22,7 +22,7 @@ Here are the steps to compile and run our code in order to replicate our results
 
 9.) You should now see a drone.
 
-10.) Download the "RubenTest.py" script from this GitHub repository and save it in the following directory location: /AirSim/PythonClient/multirotor
+10.) Download the "AirSimRL.py" script from this GitHub repository and save it in the following directory location: /AirSim/PythonClient/multirotor
 
 11.) Upload "PPO.zip" to the same folder (/AirSim/PythonClient/multirotor)
 
@@ -30,7 +30,7 @@ Here are the steps to compile and run our code in order to replicate our results
 
 13.) Now, using Terminal, navigate to /AirSim/PythonClient/multirotor.
 
-14.) Type "python RubenTest.py" and press enter.
+14.) Type "python AirSimRL.py" and press enter.
 
 15.) You will see it say "Press any key to takeoff" in the terminal, press any key and then follow the rest of the prompts. You should see the drone flying autonomously in AirSim using the reinforcement learning model that you trained (PPO.zip).
 
