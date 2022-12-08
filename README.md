@@ -8,9 +8,9 @@ Software you must install in order for the steps below to work:
 
 1.) You need to do pip install numpy
 
-1.) You need to do pip install gym
+2.) You need to do pip install gym
 
-2.) You need to do pip install stable-baselines3[extra] (if you are on Mac then you need to do pip install 'stable-baselines3[extra]')
+3.) You need to do pip install stable-baselines3[extra] (if you are on Mac then you need to do pip install 'stable-baselines3[extra]')
 
 
 Here are the steps to compile and run our code in order to replicate our results:
