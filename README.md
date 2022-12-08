@@ -11,7 +11,7 @@ Software you must install in order for the steps below to work:
 
 Here are the steps to compile and run our code in order to replicate our results:
 
-1.) Go to this link: https://drive.google.com/file/d/1sa3BACGzJf0FKjR2DPEz-j345Ub-pG0F/view?usp=sharing
+1.) Go to this link: https://colab.research.google.com/drive/1-P9xrSE-l14V0mS0qsHiY_ZmHGxPqx01?usp=sharing
 
 2.) Run all of the cells top to bottom
 
