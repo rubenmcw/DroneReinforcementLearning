@@ -21,7 +21,7 @@ Here are the steps to compile and run our code in order to replicate our results
 
 5.) Go to this website: https://microsoft.github.io/AirSim/build_macos/ and follow the instructions to install AirSim on your computer. Follow the "Host machine" instructions. They have instructions for Windows, Mac, and Linux.
 
-6.) Open AirSim (follow the instructions here to open AirSim: https://microsoft.github.io/AirSim/build_macos/).
+6.) Open AirSim (follow the instructions here to open AirSim: https://microsoft.github.io/AirSim/build_macos/. Look at the section titled "How to Use AirSim").
 
 7.) Click the dropdown with the double arrow pointing to the right next to where it says "Compile" (see image below). Then Click "Play".
 
