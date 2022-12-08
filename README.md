@@ -6,13 +6,11 @@ IMPORTANT NOTE: automatically generated documentation for the code is located at
 
 Software you must install in order for the steps below to work:
 
-1.) You need to install PyTorch, download the correct installation for your system by using this website: https://pytorch.org/get-started/locally/
+1.) You need to do pip install numpy
 
-2.) You need to do pip install numpy
+2.) You need to do pip install gym
 
-3.) You need to do pip install gym
-
-4.) You need to do pip install stable-baselines3[extra] (if you are on Mac then you need to do pip install 'stable-baselines3[extra]')
+3.) You need to do pip install stable-baselines3[extra] (if you are on Mac then you need to do pip install 'stable-baselines3[extra]')
 
 
 Here are the steps to compile and run our code in order to replicate our results:
