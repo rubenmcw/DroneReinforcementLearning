@@ -55,7 +55,7 @@ Now the below steps pertain to our second project:
 
 19.) You will be seeing two matrices, the first one gives you the general matrix like rows and numbers , where the obstacles are located, goal and start position.
 
-20.) The second bottom matrix gives you the reward values updated in all the cells. and you can notice the reward values neat the obstacle are lower comapared to the other cells/states.
+20.) The second bottom matrix gives you the reward values updated in all the cells. and you can notice the reward values near the obstacle are lower compared to the other cells/states.
 
 -----------------------------------------------------------------------------------
 Information about datasets:
