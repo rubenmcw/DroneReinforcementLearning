@@ -1,5 +1,7 @@
 # DroneReinforcementLearning
 
+IMPORTANT NOTE: Before looking through the code, watch this video to get an initial understanding: https://drive.google.com/file/d/1hm-66B-x_YJiRuOZaEUI84YJ-Y1KLDAO/view?usp=sharing
+
 IMPORTANT NOTE: automatically generated documentation for the code is located at doc > _build > html > index.html
 
 Software you must install in order for the steps below to work:
