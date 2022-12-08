@@ -17,6 +17,11 @@ from stable_baselines3.common.evaluation import evaluate_policy
 
 #code adapted from: https://github.com/nicknochnack/ReinforcementLearningCourse/blob/main/Project%203%20-%20Custom%20Environment.ipynb
 
+
+#The purpose of the following code is to utilize the PPO model that was trained in CreatePPOModel.ipynb in AirSim so that the 
+#drone knows to stay within a certain altitude range in order to maximize its reward
+
+
 class FlightEnv(Env):
     """
     This is the environment that we use for reinforcement learning.
