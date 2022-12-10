@@ -53,7 +53,7 @@ Now the below steps pertain to our second project:
 
 17.) Run all of the cells top to bottom
 
-18.) Once all of the cells have finished running, below the last cell you will see the output being displayed. 
+18.) Once all of the cells have finished running, below the second to last cell you will see the output being displayed. 
 
 19.) You will be seeing two matrices, the first one gives you the general matrix like rows and numbers , where the obstacles are located, goal and start position.
 
