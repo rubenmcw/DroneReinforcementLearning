@@ -1,4 +1,4 @@
-#certain parts of the code below were initially borrowed from (but we have changed it A LOT): https://github.com/jemaw/gym-safety
+#certain parts of the code below were initially borrowed from (but we have changed it A LOT): https://github.com/jemaw/gym-safety/blob/master/gym_safety/envs/gridnavigation.py
 
 # -*- coding: utf-8 -*-
 """2DGridDroneMoreGoals.ipynb
