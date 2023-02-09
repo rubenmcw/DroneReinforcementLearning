@@ -1,4 +1,4 @@
-parts of the code below are heavily adapted from: https://github.com/jemaw/gym-safety
+#certain parts of the code below were initially borrowed from (but we have changed it A LOT): https://github.com/jemaw/gym-safety
 
 # -*- coding: utf-8 -*-
 """2DGridDroneMoreGoals.ipynb
