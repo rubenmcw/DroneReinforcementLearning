@@ -1,0 +1,352 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (16,25)
+Episode:1 Score:-10922.0 Successful:False Number of Steps:500
+Episode:2 Score:99984.25 Successful:True Number of Steps:10
+Episode:3 Score:99993.25 Successful:True Number of Steps:7
+Episode:4 Score:99996.25 Successful:True Number of Steps:3
+Episode:5 Score:99999.25 Successful:True Number of Steps:2
+Episode:6 Score:99952.25 Successful:True Number of Steps:43
+Episode:7 Score:-7777.25 Successful:False Number of Steps:500
+Episode:8 Score:99988.25 Successful:True Number of Steps:13
+Episode:9 Score:99982.75 Successful:True Number of Steps:18
+Episode:10 Score:99985.75 Successful:True Number of Steps:8
+Episode:11 Score:99994.75 Successful:True Number of Steps:5
+Episode:12 Score:99936.75 Successful:True Number of Steps:62
+Episode:13 Score:99999.25 Successful:True Number of Steps:2
+Episode:14 Score:99931.25 Successful:True Number of Steps:36
+Episode:15 Score:99999.25 Successful:True Number of Steps:2
+Episode:16 Score:-7390.25 Successful:False Number of Steps:500
+Episode:17 Score:99894.25 Successful:True Number of Steps:56
+Episode:18 Score:99888.25 Successful:True Number of Steps:91
+Episode:19 Score:99990.25 Successful:True Number of Steps:11
+Episode:20 Score:99993.75 Successful:True Number of Steps:8
+Episode:21 Score:99974.5 Successful:True Number of Steps:27
+Episode:22 Score:99923.25 Successful:True Number of Steps:59
+Episode:23 Score:99994.75 Successful:True Number of Steps:5
+Episode:24 Score:99986.75 Successful:True Number of Steps:13
+Episode:25 Score:-8651.25 Successful:False Number of Steps:500
+Episode:26 Score:99980.75 Successful:True Number of Steps:16
+Episode:27 Score:-8670.0 Successful:False Number of Steps:500
+Episode:28 Score:99914.25 Successful:True Number of Steps:64
+Episode:29 Score:99993.25 Successful:True Number of Steps:4
+Episode:30 Score:-3545.5 Successful:False Number of Steps:500
+number successful: 24
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (25,24)
+Episode:1 Score:-498.0 Successful:False Number of Steps:500
+Episode:2 Score:-909.25 Successful:False Number of Steps:500
+Episode:3 Score:99846.25 Successful:True Number of Steps:113
+Episode:4 Score:-1666.0 Successful:False Number of Steps:500
+Episode:5 Score:-926.25 Successful:False Number of Steps:500
+Episode:6 Score:-757.5 Successful:False Number of Steps:500
+Episode:7 Score:-766.5 Successful:False Number of Steps:500
+Episode:8 Score:99503.0 Successful:True Number of Steps:361
+Episode:9 Score:-638.0 Successful:False Number of Steps:500
+Episode:10 Score:-673.75 Successful:False Number of Steps:500
+Episode:11 Score:-4157.0 Successful:False Number of Steps:500
+Episode:12 Score:95826.5 Successful:True Number of Steps:442
+Episode:13 Score:-3651.0 Successful:False Number of Steps:500
+Episode:14 Score:-949.0 Successful:False Number of Steps:500
+Episode:15 Score:99434.5 Successful:True Number of Steps:361
+Episode:16 Score:-927.25 Successful:False Number of Steps:500
+Episode:17 Score:99799.5 Successful:True Number of Steps:174
+Episode:18 Score:99754.75 Successful:True Number of Steps:151
+Episode:19 Score:99733.75 Successful:True Number of Steps:279
+Episode:20 Score:98740.5 Successful:True Number of Steps:403
+Episode:21 Score:97743.75 Successful:True Number of Steps:399
+Episode:22 Score:98828.5 Successful:True Number of Steps:453
+Episode:23 Score:-1001.75 Successful:False Number of Steps:500
+Episode:24 Score:-765.75 Successful:False Number of Steps:500
+Episode:25 Score:-947.5 Successful:False Number of Steps:500
+Episode:26 Score:-4960.25 Successful:False Number of Steps:500
+Episode:27 Score:-884.75 Successful:False Number of Steps:500
+Episode:28 Score:99242.5 Successful:True Number of Steps:418
+Episode:29 Score:99619.5 Successful:True Number of Steps:242
+Episode:30 Score:-680.5 Successful:False Number of Steps:500
+number successful: 12
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (4,7)
+Episode:1 Score:-12211.5 Successful:False Number of Steps:500
+Episode:2 Score:99396.5 Successful:True Number of Steps:46
+Episode:3 Score:99710.0 Successful:True Number of Steps:35
+Episode:4 Score:99988.25 Successful:True Number of Steps:17
+Episode:5 Score:99800.5 Successful:True Number of Steps:24
+Episode:6 Score:99972.5 Successful:True Number of Steps:31
+Episode:7 Score:99897.25 Successful:True Number of Steps:24
+Episode:8 Score:99966.75 Successful:True Number of Steps:36
+Episode:9 Score:99987.25 Successful:True Number of Steps:13
+Episode:10 Score:97510.25 Successful:True Number of Steps:120
+Episode:11 Score:-12509.25 Successful:False Number of Steps:500
+Episode:12 Score:-10723.25 Successful:False Number of Steps:500
+Episode:13 Score:99500.0 Successful:True Number of Steps:70
+Episode:14 Score:-12820.25 Successful:False Number of Steps:500
+Episode:15 Score:99781.5 Successful:True Number of Steps:17
+Episode:16 Score:99394.25 Successful:True Number of Steps:37
+Episode:17 Score:99154.0 Successful:True Number of Steps:65
+Episode:18 Score:-10617.75 Successful:False Number of Steps:500
+Episode:19 Score:98490.25 Successful:True Number of Steps:89
+Episode:20 Score:98094.75 Successful:True Number of Steps:273
+Episode:21 Score:99980.75 Successful:True Number of Steps:47
+Episode:22 Score:99891.75 Successful:True Number of Steps:28
+Episode:23 Score:99982.5 Successful:True Number of Steps:50
+Episode:24 Score:-14696.75 Successful:False Number of Steps:500
+Episode:25 Score:99383.25 Successful:True Number of Steps:80
+Episode:26 Score:-11354.25 Successful:False Number of Steps:500
+Episode:27 Score:99885.25 Successful:True Number of Steps:30
+Episode:28 Score:-9317.5 Successful:False Number of Steps:500
+Episode:29 Score:-11291.75 Successful:False Number of Steps:500
+Episode:30 Score:99599.75 Successful:True Number of Steps:15
+number successful: 21
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (12,15)
+Episode:1 Score:99846.25 Successful:True Number of Steps:161
+Episode:2 Score:99082.75 Successful:True Number of Steps:370
+Episode:3 Score:98594.25 Successful:True Number of Steps:264
+Episode:4 Score:99836.25 Successful:True Number of Steps:184
+Episode:5 Score:99941.25 Successful:True Number of Steps:118
+Episode:6 Score:98313.25 Successful:True Number of Steps:270
+Episode:7 Score:99537.25 Successful:True Number of Steps:145
+Episode:8 Score:99909.0 Successful:True Number of Steps:118
+Episode:9 Score:99829.0 Successful:True Number of Steps:145
+Episode:10 Score:96991.25 Successful:True Number of Steps:451
+Episode:11 Score:99897.75 Successful:True Number of Steps:140
+Episode:12 Score:99734.25 Successful:True Number of Steps:230
+Episode:13 Score:99051.0 Successful:True Number of Steps:319
+Episode:14 Score:99887.75 Successful:True Number of Steps:151
+Episode:15 Score:-603.75 Successful:False Number of Steps:500
+Episode:16 Score:99824.25 Successful:True Number of Steps:174
+Episode:17 Score:94881.25 Successful:True Number of Steps:406
+Episode:18 Score:99851.25 Successful:True Number of Steps:137
+Episode:19 Score:-5647.75 Successful:False Number of Steps:500
+Episode:20 Score:99964.75 Successful:True Number of Steps:89
+Episode:21 Score:99742.25 Successful:True Number of Steps:229
+Episode:22 Score:99930.25 Successful:True Number of Steps:103
+Episode:23 Score:99979.5 Successful:True Number of Steps:61
+Episode:24 Score:99872.0 Successful:True Number of Steps:115
+Episode:25 Score:99820.5 Successful:True Number of Steps:170
+Episode:26 Score:99774.0 Successful:True Number of Steps:214
+Episode:27 Score:97464.75 Successful:True Number of Steps:332
+Episode:28 Score:-7517.75 Successful:False Number of Steps:500
+Episode:29 Score:-5857.0 Successful:False Number of Steps:500
+Episode:30 Score:-8196.75 Successful:False Number of Steps:500
+number successful: 25
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (25,12)
+Episode:1 Score:99442.0 Successful:True Number of Steps:100
+Episode:2 Score:99825.0 Successful:True Number of Steps:66
+Episode:3 Score:99743.0 Successful:True Number of Steps:252
+Episode:4 Score:99109.25 Successful:True Number of Steps:165
+Episode:5 Score:99680.75 Successful:True Number of Steps:94
+Episode:6 Score:99270.0 Successful:True Number of Steps:101
+Episode:7 Score:99766.25 Successful:True Number of Steps:122
+Episode:8 Score:-12458.75 Successful:False Number of Steps:500
+Episode:9 Score:99941.5 Successful:True Number of Steps:44
+Episode:10 Score:99477.0 Successful:True Number of Steps:86
+Episode:11 Score:98960.75 Successful:True Number of Steps:93
+Episode:12 Score:99963.5 Successful:True Number of Steps:84
+Episode:13 Score:97902.0 Successful:True Number of Steps:205
+Episode:14 Score:99376.0 Successful:True Number of Steps:67
+Episode:15 Score:99891.5 Successful:True Number of Steps:143
+Episode:16 Score:99973.5 Successful:True Number of Steps:34
+Episode:17 Score:99299.25 Successful:True Number of Steps:245
+Episode:18 Score:99267.75 Successful:True Number of Steps:70
+Episode:19 Score:97701.0 Successful:True Number of Steps:477
+Episode:20 Score:90518.0 Successful:True Number of Steps:475
+Episode:21 Score:99595.0 Successful:True Number of Steps:226
+Episode:22 Score:99267.0 Successful:True Number of Steps:104
+Episode:23 Score:99406.5 Successful:True Number of Steps:273
+Episode:24 Score:99970.0 Successful:True Number of Steps:88
+Episode:25 Score:99884.75 Successful:True Number of Steps:80
+Episode:26 Score:99898.25 Successful:True Number of Steps:51
+Episode:27 Score:-10674.0 Successful:False Number of Steps:500
+Episode:28 Score:99697.0 Successful:True Number of Steps:42
+Episode:29 Score:99965.5 Successful:True Number of Steps:31
+Episode:30 Score:99969.0 Successful:True Number of Steps:77
+number successful: 28
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (10,2)
+Episode:1 Score:99486.75 Successful:True Number of Steps:118
+Episode:2 Score:99277.5 Successful:True Number of Steps:76
+Episode:3 Score:99970.0 Successful:True Number of Steps:32
+Episode:4 Score:99999.5 Successful:True Number of Steps:21
+Episode:5 Score:-1286.25 Successful:False Number of Steps:500
+Episode:6 Score:99635.5 Successful:True Number of Steps:84
+Episode:7 Score:99930.25 Successful:True Number of Steps:141
+Episode:8 Score:99636.5 Successful:True Number of Steps:115
+Episode:9 Score:99912.5 Successful:True Number of Steps:51
+Episode:10 Score:99514.0 Successful:True Number of Steps:96
+Episode:11 Score:99899.5 Successful:True Number of Steps:120
+Episode:12 Score:99994.5 Successful:True Number of Steps:11
+Episode:13 Score:99515.75 Successful:True Number of Steps:92
+Episode:14 Score:99997.5 Successful:True Number of Steps:17
+Episode:15 Score:99995.0 Successful:True Number of Steps:32
+Episode:16 Score:97387.5 Successful:True Number of Steps:382
+Episode:17 Score:99483.25 Successful:True Number of Steps:70
+Episode:18 Score:100002.75 Successful:True Number of Steps:20
+Episode:19 Score:99988.75 Successful:True Number of Steps:82
+Episode:20 Score:99181.25 Successful:True Number of Steps:39
+Episode:21 Score:99805.0 Successful:True Number of Steps:33
+Episode:22 Score:-1607.25 Successful:False Number of Steps:500
+Episode:23 Score:99903.25 Successful:True Number of Steps:26
+Episode:24 Score:99996.25 Successful:True Number of Steps:18
+Episode:25 Score:100001.5 Successful:True Number of Steps:25
+Episode:26 Score:100005.75 Successful:True Number of Steps:79
+Episode:27 Score:-5239.75 Successful:False Number of Steps:500
+Episode:28 Score:100006.0 Successful:True Number of Steps:75
+Episode:29 Score:100002.5 Successful:True Number of Steps:13
+Episode:30 Score:99939.75 Successful:True Number of Steps:78
+number successful: 27
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (25,19)
+Episode:1 Score:98694.25 Successful:True Number of Steps:322
+Episode:2 Score:-669.0 Successful:False Number of Steps:500
+Episode:3 Score:-642.25 Successful:False Number of Steps:500
+Episode:4 Score:-670.0 Successful:False Number of Steps:500
+Episode:5 Score:97000.25 Successful:True Number of Steps:447
+Episode:6 Score:99432.5 Successful:True Number of Steps:260
+Episode:7 Score:99670.75 Successful:True Number of Steps:247
+Episode:8 Score:99886.0 Successful:True Number of Steps:167
+Episode:9 Score:98865.75 Successful:True Number of Steps:499
+Episode:10 Score:-652.75 Successful:False Number of Steps:500
+Episode:11 Score:-1718.25 Successful:False Number of Steps:500
+Episode:12 Score:99834.75 Successful:True Number of Steps:133
+Episode:13 Score:-632.25 Successful:False Number of Steps:500
+Episode:14 Score:99849.75 Successful:True Number of Steps:154
+Episode:15 Score:98748.0 Successful:True Number of Steps:500
+Episode:16 Score:99500.5 Successful:True Number of Steps:393
+Episode:17 Score:-2050.5 Successful:False Number of Steps:500
+Episode:18 Score:99242.75 Successful:True Number of Steps:281
+Episode:19 Score:97299.0 Successful:True Number of Steps:470
+Episode:20 Score:99852.0 Successful:True Number of Steps:129
+Episode:21 Score:99854.0 Successful:True Number of Steps:121
+Episode:22 Score:-520.0 Successful:False Number of Steps:500
+Episode:23 Score:99747.0 Successful:True Number of Steps:235
+Episode:24 Score:-4693.25 Successful:False Number of Steps:500
+Episode:25 Score:99014.5 Successful:True Number of Steps:219
+Episode:26 Score:-3278.0 Successful:False Number of Steps:500
+Episode:27 Score:99448.75 Successful:True Number of Steps:361
+Episode:28 Score:-1100.25 Successful:False Number of Steps:500
+Episode:29 Score:-630.75 Successful:False Number of Steps:500
+Episode:30 Score:99693.5 Successful:True Number of Steps:291
+number successful: 18
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (12,5)
+Episode:1 Score:97145.0 Successful:True Number of Steps:250
+Episode:2 Score:99919.0 Successful:True Number of Steps:66
+Episode:3 Score:98274.75 Successful:True Number of Steps:85
+Episode:4 Score:100005.0 Successful:True Number of Steps:16
+Episode:5 Score:99803.25 Successful:True Number of Steps:283
+Episode:6 Score:-4448.75 Successful:False Number of Steps:500
+Episode:7 Score:99997.75 Successful:True Number of Steps:25
+Episode:8 Score:99996.0 Successful:True Number of Steps:48
+Episode:9 Score:-7992.0 Successful:False Number of Steps:500
+Episode:10 Score:98631.75 Successful:True Number of Steps:153
+Episode:11 Score:-6733.0 Successful:False Number of Steps:500
+Episode:12 Score:98888.0 Successful:True Number of Steps:197
+Episode:13 Score:99944.25 Successful:True Number of Steps:65
+Episode:14 Score:-10170.75 Successful:False Number of Steps:500
+Episode:15 Score:98904.0 Successful:True Number of Steps:110
+Episode:16 Score:100003.0 Successful:True Number of Steps:7
+Episode:17 Score:100007.25 Successful:True Number of Steps:27
+Episode:18 Score:-8887.0 Successful:False Number of Steps:500
+Episode:19 Score:-7455.0 Successful:False Number of Steps:500
+Episode:20 Score:99988.75 Successful:True Number of Steps:35
+Episode:21 Score:99989.25 Successful:True Number of Steps:35
+Episode:22 Score:99990.75 Successful:True Number of Steps:30
+Episode:23 Score:100003.0 Successful:True Number of Steps:21
+Episode:24 Score:99931.5 Successful:True Number of Steps:156
+Episode:25 Score:99939.0 Successful:True Number of Steps:127
+Episode:26 Score:99749.75 Successful:True Number of Steps:181
+Episode:27 Score:99982.75 Successful:True Number of Steps:41
+Episode:28 Score:100000.0 Successful:True Number of Steps:8
+Episode:29 Score:100003.75 Successful:True Number of Steps:16
+Episode:30 Score:100002.25 Successful:True Number of Steps:24
+number successful: 24
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (30,8)
+Episode:1 Score:99609 Successful:True Number of Steps:37
+Episode:2 Score:99595.0 Successful:True Number of Steps:54
+Episode:3 Score:99602.5 Successful:True Number of Steps:27
+Episode:4 Score:99608 Successful:True Number of Steps:18
+Episode:5 Score:99410 Successful:True Number of Steps:24
+Episode:6 Score:99590.25 Successful:True Number of Steps:71
+Episode:7 Score:99217.75 Successful:True Number of Steps:48
+Episode:8 Score:99508 Successful:True Number of Steps:31
+Episode:9 Score:99509 Successful:True Number of Steps:24
+Episode:10 Score:99188.0 Successful:True Number of Steps:90
+Episode:11 Score:99803 Successful:True Number of Steps:13
+Episode:12 Score:99904.75 Successful:True Number of Steps:27
+Episode:13 Score:98910 Successful:True Number of Steps:57
+Episode:14 Score:98904.5 Successful:True Number of Steps:72
+Episode:15 Score:99402 Successful:True Number of Steps:39
+Episode:16 Score:99311 Successful:True Number of Steps:30
+Episode:17 Score:99003 Successful:True Number of Steps:25
+Episode:18 Score:99711.0 Successful:True Number of Steps:44
+Episode:19 Score:99900.0 Successful:True Number of Steps:51
+Episode:20 Score:99821.25 Successful:True Number of Steps:32
+Episode:21 Score:98520.0 Successful:True Number of Steps:68
+Episode:22 Score:99517 Successful:True Number of Steps:29
+Episode:23 Score:98803.25 Successful:True Number of Steps:67
+Episode:24 Score:99416.25 Successful:True Number of Steps:70
+Episode:25 Score:99412.25 Successful:True Number of Steps:36
+Episode:26 Score:99202.0 Successful:True Number of Steps:33
+Episode:27 Score:99112.25 Successful:True Number of Steps:82
+Episode:28 Score:99708.25 Successful:True Number of Steps:75
+Episode:29 Score:99917.75 Successful:True Number of Steps:38
+Episode:30 Score:99303.0 Successful:True Number of Steps:36
+number successful: 30
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+RESULTS FOR STARTING POSITION: (29,25)
+Episode:1 Score:-970.25 Successful:False Number of Steps:500
+Episode:2 Score:99275.75 Successful:True Number of Steps:299
+Episode:3 Score:99227.75 Successful:True Number of Steps:404
+Episode:4 Score:-3179.5 Successful:False Number of Steps:500
+Episode:5 Score:98077.0 Successful:True Number of Steps:407
+Episode:6 Score:99717.5 Successful:True Number of Steps:109
+Episode:7 Score:-1016.75 Successful:False Number of Steps:500
+Episode:8 Score:96636.5 Successful:True Number of Steps:368
+Episode:9 Score:-1092.0 Successful:False Number of Steps:500
+Episode:10 Score:-821.25 Successful:False Number of Steps:500
+Episode:11 Score:98769.5 Successful:True Number of Steps:455
+Episode:12 Score:99391.0 Successful:True Number of Steps:279
+Episode:13 Score:-903.0 Successful:False Number of Steps:500
+Episode:14 Score:98469.25 Successful:True Number of Steps:264
+Episode:15 Score:-927.25 Successful:False Number of Steps:500
+Episode:16 Score:-743.25 Successful:False Number of Steps:500
+Episode:17 Score:96454.0 Successful:True Number of Steps:361
+Episode:18 Score:99259.25 Successful:True Number of Steps:407
+Episode:19 Score:97811.5 Successful:True Number of Steps:489
+Episode:20 Score:-869.75 Successful:False Number of Steps:500
+Episode:21 Score:99426.5 Successful:True Number of Steps:434
+Episode:22 Score:-935.25 Successful:False Number of Steps:500
+Episode:23 Score:-3676.25 Successful:False Number of Steps:500
+Episode:24 Score:99237.0 Successful:True Number of Steps:342
+Episode:25 Score:-1823.25 Successful:False Number of Steps:500
+Episode:26 Score:-5661.75 Successful:False Number of Steps:500
+Episode:27 Score:99552.0 Successful:True Number of Steps:141
+Episode:28 Score:99828.5 Successful:True Number of Steps:152
+Episode:29 Score:-900.75 Successful:False Number of Steps:500
+Episode:30 Score:99612.75 Successful:True Number of Steps:328
+number successful: 16
+average percent successful: 0.75
+average number of steps of episodes that succeeded: 134.52
