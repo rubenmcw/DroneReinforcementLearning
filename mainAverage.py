@@ -249,21 +249,24 @@ for _ in range(10):
               coords = [row, col]
 
               #now loop through each goal state and find the one that is closest to the current cell using euclidean distance
-              min_dist_goal = 9999999999
+
+              distToGoalSum = 0
               for goalState in self.goal_states:
                 euclideanDistance = self.euclidean_distance(coords, goalState)
-                if euclideanDistance < min_dist_goal:
-                  min_dist_goal = euclideanDistance
+                distToGoalSum += euclideanDistance
+
+              avgDistToGoal = float(distToGoalSum) / len(self.goal_states)
               
               #now we have the distance to the closes goal state, now we need to find the distance to the closest obstacle state
-              min_dist_obstacle = 99999999999
+              distToObstacleSum = 0
               for obstacleState in self.obstacle_states:
                 euclideanDistance = self.euclidean_distance(coords, obstacleState)
-                if euclideanDistance < min_dist_obstacle:
-                  min_dist_obstacle = euclideanDistance
+                distToObstacleSum += euclideanDistance
+
+              avgDistToObstacle = float(distToObstacleSum) / len(self.obstacle_states)
 
               #now we have the distance to the closest goal state and the distance to the closest obstacle state, so now we can calculate the reward for this cell of the grid
-              self.reward_matrix[row][col] = self.calculate_reward(min_dist_goal, min_dist_obstacle)
+              self.reward_matrix[row][col] = self.calculate_reward(avgDistToGoal, avgDistToObstacle)
 
 
           #create image of grid without the player in it
