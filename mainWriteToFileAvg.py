@@ -15,7 +15,7 @@ from gym.spaces import Discrete, Box, Dict, Tuple, MultiBinary, MultiDiscrete
 import numpy as np
 import random
 import os
-from stable_baselines3 import PPO
+from stable_baselines3 import PPO, A2C
 from stable_baselines3.common.vec_env import VecFrameStack
 from stable_baselines3.common.evaluation import evaluate_policy
 import cv2
@@ -39,13 +39,50 @@ def suppress_stdout():
 
 DEFAULT_SEED = 42
 
+NUM_ITERATIONS = 10
+
+TIMESTEPS_FOR_TRAINING = 1000000
+
 
 totalSuccessful = 0
 totalnumSteps = 0
 
 percentSuccessful = 0
 
-for _ in range(10):
+fileName = input("enter the name of the file you want to send results to: ")
+
+f = open(fileName, "w")
+
+nameOfExp = input("Choose a name for this experiment (e.g. Min Dist to Goal And Obstacle): ")
+
+f.write(f"Choose a name for this experiment (e.g. Min Dist to Goal And Obstacle): {nameOfExp}\n")
+
+f.write("--------------------------------\n")
+
+descOfEnv = input("description of environment (describe what you changed in the code and why you think it might work): ")
+
+f.write(f"description of environment (describe what you changed in the code and why you think it might work): {descOfEnv}\n")
+
+f.write("--------------------------------\n")
+
+alg = input("Reinforcement learning algorithm you are using (e.g. PPO, A2C): ")
+
+f.write(f"Reinforcement learning algorithm you are using (e.g. PPO, A2C): {alg}\n")
+
+f.write("--------------------------------\n")
+
+f.write(f"Experiment was ran with {NUM_ITERATIONS} iterations\n")
+
+f.write("--------------------------------\n")
+
+f.write(f"number of timesteps for training: {TIMESTEPS_FOR_TRAINING}\n")
+
+f.write("--------------------------------\n")
+
+
+
+
+for _ in range(NUM_ITERATIONS):
 
   generatedStartState = np.array([0, 0])
 
@@ -160,25 +197,6 @@ for _ in range(10):
         for i in range(len(list1)):
           sum += (list1[i] - list2[i]) ** 2
         return math.sqrt(sum)
-
-      def manhattan_distance(self, list1, list2):
-        sum = 0
-        for i in range(len(list1)):
-          sum += abs(list1[i] - list2[i])
-        return sum
-
-      def hamming_distance(self, list1, list2):
-        sum = 0
-        for i in range(len(list1)):
-          sum += abs(list1[i] - list2[i])
-        return (float(sum) / len(list1))
-
-      def minkowski_distance(self, list1, list2, p):
-        sum = 0
-        for i in range(len(list1)):
-          sum += abs(list1[i] - list2[i]) ** p
-        return sum ** (1/float(p))
-
 
       #this will be replaced by Tolu's equation once he finishes it, the code below is just meant to be used temporarily
       def calculate_reward(self, dist_to_goal, dist_to_obstacle):
@@ -471,10 +489,10 @@ for _ in range(10):
 
   log_path = os.path.join('Training', 'Logs')
 
-  model = PPO("MlpPolicy", env, verbose=1, tensorboard_log=log_path)
+  model = A2C("MlpPolicy", env, verbose=1, tensorboard_log=log_path)
 
   with suppress_stdout():
-    model.learn(total_timesteps=1000000)
+    model.learn(total_timesteps=TIMESTEPS_FOR_TRAINING)
 
   """# 6. Save Model"""
 
@@ -482,8 +500,10 @@ for _ in range(10):
 
   """Evaluate the model"""
 
+
+
   #evaluate_policy(model, env, n_eval_episodes=10, render=True)
-  print(f"RESULTS FOR STARTING POSITION: ({generatedStartState[0]},{generatedStartState[1]})")
+  f.write(f"RESULTS FOR STARTING POSITION: ({generatedStartState[0]},{generatedStartState[1]})\n")
   numSuccessful = 0
   episodes = 30
   for episode in range(1, episodes+1):
@@ -504,14 +524,17 @@ for _ in range(10):
       if info["successful"] == True:
         numSuccessful += 1
         totalnumSteps += numSteps
-      print('Episode:{} Score:{} Successful:{} Number of Steps:{}'.format(episode, score, info["successful"], numSteps))
+      f.write('Episode:{} Score:{} Successful:{} Number of Steps:{}\n'.format(episode, score, info["successful"], numSteps))
 
-  print(f"number successful: {numSuccessful}")
+  f.write(f"number successful: {numSuccessful}\n")
   percentSuccessful += numSuccessful / float(30)
   totalSuccessful += numSuccessful
   env.close()
 
+f.write("--------------------------------\n")
 
-print(f"average percent successful: {percentSuccessful / float(10)}")
+f.write(f"average percent successful (APS): {percentSuccessful / float(10)}\n")
 
-print(f"average number of steps of episodes that succeeded: {float(totalnumSteps) / totalSuccessful}")
+f.write(f"average number of steps of episodes that succeeded (ANSES): {float(totalnumSteps) / totalSuccessful}\n")
+
+f.close()
