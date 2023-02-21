@@ -39,6 +39,10 @@ def suppress_stdout():
 
 DEFAULT_SEED = 42
 
+NUM_ITERATIONS = 10
+
+TIMESTEPS_FOR_TRAINING = 1000000
+
 
 totalSuccessful = 0
 totalnumSteps = 0
@@ -49,7 +53,36 @@ fileName = input("enter the name of the file you want to send results to: ")
 
 f = open(fileName, "w")
 
-for _ in range(10):
+nameOfExp = input("Choose a name for this experiment (e.g. Min Dist to Goal And Obstacle): ")
+
+f.write(f"Choose a name for this experiment (e.g. Min Dist to Goal And Obstacle): {nameOfExp}\n")
+
+f.write("--------------------------------\n")
+
+descOfEnv = input("description of environment (describe what you changed in the code and why you think it might work): ")
+
+f.write(f"description of environment (describe what you changed in the code and why you think it might work): {descOfEnv}\n")
+
+f.write("--------------------------------\n")
+
+alg = input("Reinforcement learning algorithm you are using (e.g. PPO, A2C): ")
+
+f.write(f"Reinforcement learning algorithm you are using (e.g. PPO, A2C): {alg}\n")
+
+f.write("--------------------------------\n")
+
+f.write(f"Experiment was ran with {NUM_ITERATIONS} iterations\n")
+
+f.write("--------------------------------\n")
+
+f.write(f"number of timesteps for training: {TIMESTEPS_FOR_TRAINING}\n")
+
+f.write("--------------------------------\n")
+
+
+
+
+for _ in range(NUM_ITERATIONS):
 
   generatedStartState = np.array([0, 0])
 
@@ -453,10 +486,10 @@ for _ in range(10):
 
   log_path = os.path.join('Training', 'Logs')
 
-  model = A2C("MlpPolicy", env, verbose=1, tensorboard_log=log_path)
+  model = PPO("MlpPolicy", env, verbose=1, tensorboard_log=log_path)
 
   with suppress_stdout():
-    model.learn(total_timesteps=1000000)
+    model.learn(total_timesteps=TIMESTEPS_FOR_TRAINING)
 
   """# 6. Save Model"""
 
@@ -495,9 +528,10 @@ for _ in range(10):
   totalSuccessful += numSuccessful
   env.close()
 
+f.write("--------------------------------\n")
 
-f.write(f"average percent successful: {percentSuccessful / float(10)}\n")
+f.write(f"average percent successful (APS): {percentSuccessful / float(10)}\n")
 
-f.write(f"average number of steps of episodes that succeeded: {float(totalnumSteps) / totalSuccessful}\n")
+f.write(f"average number of steps of episodes that succeeded (ANSES): {float(totalnumSteps) / totalSuccessful}\n")
 
 f.close()
