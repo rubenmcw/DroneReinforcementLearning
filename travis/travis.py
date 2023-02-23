@@ -277,36 +277,35 @@ for _ in range(NUM_ITERATIONS):
 
           #implementing travis pseudocode
 
-          max_euclidian_distance = math.sqrt((32 ** 2) + (32 ** 2)) #is 32 correct here?
+          max_euclidian_distance = self.euclideanDistance([31,31],[0,0])
 
           for x in range(len(self.reward_matrix)):
             for y in range(len(self.reward_matrix)):
-              if ([row, col] in self.obstacle_states):
+              if ([x, y] in self.obstacle_states) or ([x, y] in self.goal_states):
                 continue
-              cell_reward = 0
 
               #PART 1: calculate total reward for how close we are to all goal states
               for goal_cell in self.goal_states:
                 #will scale distance between 1 and 0, where 1 is the best and 0 is the worst
-                distance_to_reward = math.sqrt((x - goal_cell[0])**2 + (y - goal_cell[1])**2)
+                distance_to_reward = self.euclideanDistance([x,y],goal_cell)
 
                 #reward is always going to be between 1 and 0, 1 is the best
                 reward = (max_euclidian_distance - distance_to_reward) / max_euclidian_distance
 
-                cell_reward += reward
+                self.reward_matrix[x][y] += reward
 
                 #NOTE: you can tweak the reward so that it decreases faster or slower the farther you get from the goal cell
                 #another option
                 #cell_reward += e ** reward
 
-          #reduce reward for being close to obstacles
-          for obstacle_cell in self.obstacle_states:
-            distance_to_obstacle = math.sqrt((x - goal_cell[0])**2 + (y - goal_cell[1]) ** 2)
+              #PART 2: reduce reward for being close to obstacles
+              for obstacle_cell in self.obstacle_states:
+                distance_to_obstacle = self.euclideanDistance([x,y],obstacle_cell)
 
-            #reward is always going to be between 1 and 0, 1 is the best
-            reward = (max_euclidian_distance - distance_to_obstacle) / max_euclidian_distance
+                #reward is always going to be between 1 and 0, 1 is the best
+                reward = (max_euclidian_distance - distance_to_obstacle) / max_euclidian_distance
 
-            cell_reward -= (math.e ** reward) * -0.5 #-0.5 is the hyperparameter #hyperparameter < 0
+                self.reward_matrix[x][y] -= (math.e ** reward) * -0.5 #-0.5 is the hyperparameter #hyperparameter < 0
 
 
 
@@ -317,35 +316,7 @@ for _ in range(NUM_ITERATIONS):
           #end implementing travis pseudocode
 
 
-          #calculate reward for each empty cell of grid
-          for row in range(len(self.reward_matrix)):
-            for col in range(len(self.reward_matrix)):
-              #skip obstacle states and goal states
-              if ([row, col] in self.obstacle_states) or ([row, col] in self.goal_states):
-                continue
-
-              #coordinates of current cell
-              coords = [row, col]
-
-              #now loop through each goal state and find the one that is closest to the current cell using euclidean distance
-
-              distToGoalSum = 0
-              for goalState in self.goal_states:
-                euclideanDistance = self.euclidean_distance(coords, goalState)
-                distToGoalSum += euclideanDistance
-
-              avgDistToGoal = float(distToGoalSum) / len(self.goal_states)
-              
-              #now we have the distance to the closes goal state, now we need to find the distance to the closest obstacle state
-              distToObstacleSum = 0
-              for obstacleState in self.obstacle_states:
-                euclideanDistance = self.euclidean_distance(coords, obstacleState)
-                distToObstacleSum += euclideanDistance
-
-              avgDistToObstacle = float(distToObstacleSum) / len(self.obstacle_states)
-
-              #now we have the distance to the closest goal state and the distance to the closest obstacle state, so now we can calculate the reward for this cell of the grid
-              self.reward_matrix[row][col] = self.calculate_reward(avgDistToGoal, avgDistToObstacle)
+          
 
 
           #create image of grid without the player in it
