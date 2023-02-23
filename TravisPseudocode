@@ -1,0 +1,73 @@
+max_euclidian_distance = sqrt(grid_x^ 2 + grid_y^2)
+
+goal_list = [ ... ] // a list {x, y} for each goal cell in the map 
+obstacle_list = [ ... ] // a list {x, y} for each obstacle cell in the map 
+
+for x = 0 .. grid_x:
+	for y = 0 .. grid_y:
+		if is_obstacle[x][y]:
+			cell_reward = -infinity
+			continue // obstacle states have no reward
+
+		cell_reward = 0
+
+		//PART 1: calculate total reward for how close we are to all goal states
+		for goal_cell in goal_list:
+			 // will scale distance between 1 and 0, where 1 is the best and 0 is the worst
+			distance_to_reward = sqrt( (x - goal_cell.x)^2 + (y - goal_cell.y)^2 ))
+
+			// reward is always going to be between 1 and 0, 1 is the best
+			reward = (max_euclidian_distance - distance_to_reward) /  max_euclidian_distance
+
+			cell_reward += reward
+		
+			//NOTE: you can tweak the reward so that it decreases faster or slower the farther you get from the goal cell
+			//another option
+			cell_reward += e^reward
+
+		//PART 2: reduce reward for being close to obstacles
+		for obstacle_cell in obstacle_list:
+			distance_to_obstacle = sqrt( (x - goal_cell.x)^2 + (y - goal_cell.y)^2 ))
+
+			// reward is always going to be between 1 and 0, 1 is the best
+			reward = (max_euclidian_distance - distance_to_obstacle) /  max_euclidian_distance
+
+			cell_reward -= (e^reward) * hyperparameter //hyperparameter < 0
+
+
+def cell_reward(x, y):
+	//can even compute lazily - 
+	//put in cache so you don't have to recompute
+
+	for y = 0 .. grid_y:
+		if is_obstacle[x][y]:
+			cell_reward = -infinity
+			continue // obstacle states have no reward
+
+		cell_reward = 0
+
+		//PART 1: calculate total reward for how close we are to all goal states
+		for goal_cell in goal_list:
+			 // will scale distance between 1 and 0, where 1 is the best and 0 is the worst
+			distance_to_reward = sqrt( (x - goal_cell.x)^2 + (y - goal_cell.y)^2 ))
+
+			// reward is always going to be between 1 and 0, 1 is the best
+			reward = (max_euclidian_distance - distance_to_reward) /  max_euclidian_distance
+
+			cell_reward += reward
+		
+			//NOTE: you can tweak the reward so that it decreases faster or slower the farther you get from the goal cell
+			//another option
+			cell_reward += e^reward
+
+		//PART 2: reduce reward for being close to obstacles
+		for obstacle_cell in obstacle_list:
+			distance_to_obstacle = sqrt( (x - goal_cell.x)^2 + (y - goal_cell.y)^2 ))
+
+			// reward is always going to be between 1 and 0, 1 is the best
+			reward = (max_euclidian_distance - distance_to_obstacle) /  max_euclidian_distance
+
+			cell_reward -= (e^reward) * hyperparameter //hyperparameter < 0
+
+
+
