@@ -189,7 +189,7 @@ for _ in range(10):
 
 
         
-        if dist_to_obstacle < 3:
+        if dist_to_obstacle < 3: # have a small radius around obstacles
           #if we are really close to an obstacle state, decrease the reward by a lot
           reward -= 3
         elif dist_to_obstacle < 6:

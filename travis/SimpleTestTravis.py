@@ -305,10 +305,10 @@ for _ in range(NUM_ITERATIONS):
                 #reward is always going to be between 1 and 0, 1 is the best
                 reward = (max_euclidian_distance - distance_to_obstacle) / max_euclidian_distance
 
-                self.reward_matrix[x][y] -= (math.e ** reward) * 0.1 #-0.5 is the hyperparameter #hyperparameter < 0
+                self.reward_matrix[x][y] -= (math.e ** reward) * 0.025 #-0.5 is the hyperparameter #hyperparameter < 0
 
 
-
+          print(self.reward_matrix)
 
 
 
@@ -330,38 +330,31 @@ for _ in range(NUM_ITERATIONS):
               self.observation_space = Box(0, 1, shape=(self.gridsize*self.gridsize,), dtype=np.float32)
 
       def build_asci_art(self, gridsize, rho):
-          #generates an asci representation of the grid
-          art = []
-          #first row is all blanks except for the goal state which will be in a random position in that row
-          first_row = [' ']*gridsize
-          alpha = self.np_random.randint(0, gridsize)
-          first_row[alpha] = self.GOAL_CHAR
-          first_row = ''.join(first_row)
-          #last row is all blanks except the cell all the way to the right is the starting player position
-          last_row = [' ']*gridsize
-          last_row[-1] = self.PLAYER_CHAR
-          last_row = ''.join(last_row)
-          art.append(first_row)
-          #generate middle rows
-          for row_idx in range(gridsize-2):
-              row = [' ']*gridsize
-              for col_idx in range(gridsize):
-                  #there is a percent chance that the current cell in this row will be turned into an obstacle cell
-                  if self.np_random.binomial(1, rho):
-                      row[col_idx] = self.OBSTACLE_CHAR
-              #there's a random chance that a goal state will randomly be placed somewhere in the current row
-              if self.np_random.binomial(1, rho):
-                alpha1 = self.np_random.randint(0, gridsize)
-                row[alpha1] = self.GOAL_CHAR
+              ########
 
-              art.append(''.join(row))
-          art.append(last_row)
-          #create a 1d array of all the characters in the grid (we will reshape it in a second once we return back to make_game)
-          split_art = []
-          for row in art:
-              for ch in row:
-                  split_art.append(ch)
-          return np.array(split_art)
+              art = [[self.EMPTY_CHAR for i in range(32)] for j in range(32)]
+              
+              #blue
+              art[8][17] = self.OBSTACLE_CHAR
+
+              #green
+              art[22][13] = self.GOAL_CHAR
+
+
+
+              #red
+              art[19][30] = self.PLAYER_CHAR
+
+              art1 = []
+
+              for r in art:
+                  art1.append(''.join(r))
+
+              split_art = []
+              for r in art1:
+                  for ch in r:
+                      split_art.append(ch)
+              return np.array(split_art)
 
 
       
@@ -374,7 +367,7 @@ for _ in range(NUM_ITERATIONS):
           for i in range(self.gridsize):
               for j in range(self.gridsize):
                   if self.art[i,j] == self.PLAYER_CHAR or self.art[i,j] == self.EMPTY_CHAR:
-                      amount = self.sig(0.1 * self.reward_matrix[i][j])
+                      amount = self.sig(self.reward_matrix[i][j])
                       img[i,j,:] = (amount, amount, amount)
                   else:
                       img[i,j,:] = self.FG_COLORS[self.art[i,j]]
@@ -504,8 +497,8 @@ for _ in range(NUM_ITERATIONS):
 
   model = A2C("MlpPolicy", env, verbose=1, tensorboard_log=log_path)
 
-  with suppress_stdout():
-    model.learn(total_timesteps=TIMESTEPS_FOR_TRAINING)
+  #with suppress_stdout():
+    #model.learn(total_timesteps=TIMESTEPS_FOR_TRAINING)
 
   """# 6. Save Model"""
 
@@ -513,9 +506,7 @@ for _ in range(NUM_ITERATIONS):
 
   """Evaluate the model"""
 
-
-
-  #evaluate_policy(model, env, n_eval_episodes=10, render=True)
+  evaluate_policy(model, env, n_eval_episodes=10, render=True)
   f.write(f"RESULTS FOR STARTING POSITION: ({generatedStartState[0]},{generatedStartState[1]})\n")
   numSuccessful = 0
   episodes = 30

@@ -1,0 +1,10 @@
+Choose a name for this experiment (e.g. Min Dist to Goal And Obstacle): travis
+--------------------------------
+description of environment (describe what you changed in the code and why you think it might work): travis
+--------------------------------
+Reinforcement learning algorithm you are using (e.g. PPO, A2C): A2C
+--------------------------------
+Experiment was ran with 10 iterations
+--------------------------------
+number of timesteps for training: 1000000
+--------------------------------

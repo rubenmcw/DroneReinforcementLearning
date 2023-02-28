@@ -1,0 +1,20 @@
+
+import math
+rewardMatrixXY = 0
+#calculates euclidean distance of two lists
+def euclidean_distance(list1, list2):
+    sum = 0
+    for i in range(len(list1)):
+      sum += (list1[i] - list2[i]) ** 2
+    return math.sqrt(sum)
+
+max_euclidian_distance = euclidean_distance([31,31],[0,0])
+
+distance_to_obstacle = 5
+
+#reward is always going to be between 1 and 0, 1 is the best
+reward = (max_euclidian_distance - distance_to_obstacle) / max_euclidian_distance
+
+rewardMatrixXY -= (math.e ** reward) * 0.5 #-0.5 is the hyperparameter
+
+print(rewardMatrixXY)
