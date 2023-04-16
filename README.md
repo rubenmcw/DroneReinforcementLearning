@@ -1,4 +1,4 @@
-IMPORTANT NOTE: The filesize of some Temporal Difference files were too large for GitHub so we uploaded the Temporal Difference code here: https://drive.google.com/file/d/1PZehtn7VHEIGnd9IMxkRXXUUK5vmdQsm/view?usp=share_link
+IMPORTANT NOTE: The filesize of some Temporal Difference files were too large for GitHub so we uploaded all of the Temporal Difference code here: https://drive.google.com/file/d/1PZehtn7VHEIGnd9IMxkRXXUUK5vmdQsm/view?usp=share_link
 
 <h1>Bayesian Q Learning: A Novel Approach</h1>
 
