@@ -154,7 +154,7 @@ fileName = "15Epsilonsuburban.txt"
 
 
 <h2>How to run Temporal Difference experiments:</h2>
-<p>The repository contains code for research regarding the implementation of Temporal Differences in the research paper titled “Bayesian Q Learning: A Novel Approach”. To run an experiment, follow the instructions below:</p>
+<p>The Google Drive link above contains code for research regarding the implementation of Temporal Differences in the research paper titled “Bayesian Q Learning: A Novel Approach”. To run an experiment, follow the instructions below:</p>
 <ol>
 <li>Open 2DGridDroneGoalForest_TD_April12.ipynb located in the experiments directory.</li>
 <li>Update model hyper parameters as necessary. In the experiments segment of the research paper, the following hyper parameters were changed:
